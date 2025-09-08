@@ -1,0 +1,20 @@
+[package]
+name = "hunting_hollow"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.27"
+egui = "0.27"
+winapi = { version = "0.3", features = [
+    "winbase", "processthreadsapi", "memoryapi", 
+    "winnt", "libloaderapi", "handleapi", 
+    "errhandlingapi", "debugapi", "minwinbase"
+] }
+sysinfo = "0.30"
+rand = "0.8.5"
+lazy_static = "1.4"
+anyhow = "1.0"
+chrono = "0.4"
+
+[build-dependencies]

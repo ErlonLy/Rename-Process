@@ -1,0 +1,10 @@
+# core/winapi.pxd
+cpdef create_suspended_process(object path)
+cpdef resume_process()
+cpdef read_process_memory(address, size)
+cpdef write_process_memory(address, data)
+cpdef virtual_alloc_ex(size, address=*)
+cpdef get_thread_context()
+cpdef set_thread_context(context_dict)
+cpdef get_process_handle()
+cpdef get_thread_handle()
